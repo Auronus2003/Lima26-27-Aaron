@@ -1,0 +1,31 @@
+table {
+  color: blue;
+  border-width: 1px;
+  border-style: solid;
+  border-color: blue;
+}
+td{
+  border: 1px solid Blue;
+}
+th{
+  border: 1px solid blue;
+}
+th{
+  color: green;
+}
+#miercoles{
+  color: yellow;
+}
+.recreo{
+  color: pink;
+}
+table {
+  border: 1px solid blue;
+  border-collapse: collapse;
+}
+td, th{
+  border: 1px solid Blue;
+}
+.bd{
+  background-color: pink;
+}
