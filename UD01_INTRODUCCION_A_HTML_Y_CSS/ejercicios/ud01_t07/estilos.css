@@ -1,31 +1,53 @@
 table {
-  color: blue;
-  border-width: 1px;
-  border-style: solid;
-  border-color: blue;
-}
-td{
-  border: 1px solid Blue;
-}
-th{
-  border: 1px solid blue;
-}
-th{
-  color: green;
-}
-#miercoles{
-  color: yellow;
-}
-.recreo{
-  color: pink;
-}
-table {
-  border: 1px solid blue;
+  width: 100%;
   border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: white;
 }
-td, th{
-  border: 1px solid Blue;
+
+caption {
+  padding: 10px;
+  font-size: 1.3em;
+  font-weight: bold;
 }
-.bd{
-  background-color: pink;
+
+th, td {
+  border: 1px solid #666;
+  padding: 8px;
+  height: 50px;
+}
+
+th {
+  background: white;
+}
+
+.recreo {
+  height: 20px;
+  background: white;
+}
+
+.bd { 
+  background: #d2d2ff; 
+}
+.contdes { 
+  background: #ffa366; 
+}
+.ingprof { 
+  background: #c9a3cb; 
+}
+.lima {
+  background: #b8706b;
+}
+.itperempl {
+  background: #ffc9c9;
+}
+.sistinf {
+  background: #26c6c6;
+}
+.sustaplic {
+  background: #62b1ec;
+}
+.prog {
+  background: #0fdc0f;
 }
