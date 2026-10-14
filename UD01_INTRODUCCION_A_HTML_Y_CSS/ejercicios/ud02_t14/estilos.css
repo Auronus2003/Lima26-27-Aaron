@@ -1,38 +1,35 @@
-h2,h3{
-                color: #6b2332;
-                margin-bottom: 0;
-            }
+body{
+    background-color: #CFC;
+    font-family: Georgia, Cambria, serif;
+    font-size: 16px;
+}
+h1{
+    color: #F00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 32px;
+}
 
-            body{
-                font-family: Arial, sans-serif;
-                font-size: 12px;
-            }
+h2{
+    color: #A00;
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 24px;
+}
 
-            blockquote{
-                background-color: lightgray;
-                border-left: 3px solid #6b2332;
-                padding: 5px;
-            }
+#datos_libro{
+    color: #060;
+}
 
-            .punteado{
-                color: red;
-                font-style: italic;
-                font-weight: bold;
-                text-decoration: underline;
-                text-decoration-style: dotted;
-            }
+p, li{
+    color: #00F;
+}
 
-            .fondo_rojo{
-                background-color: red;
-                color: white;
-            }
+#azul{
+    font-size: 20px;
+    font-weight: bold;
+}
 
-            .negrita{
-                font-weight: bold;
-            }
-
-            .linea{
-                border: none;
-                height: 2px;
-                background-color: #6b2332;
-            }
+#fondo_negro{
+    background-color: #000;
+    color: #FFF;
+    font-style: italic;
+}
