@@ -1,0 +1,19 @@
+input:required:valid {
+    background-color: green;
+    border: 1px solid green;
+}
+
+input:required:invalid {
+    background-color: red;
+    border: 1px solid red;
+}
+
+input:optional:valid {
+    background-color: transparent;
+    border: 1px solid green;
+}
+
+input:optional:invalid {
+    background-color: transparent;
+    border: 1px solid red;
+}
