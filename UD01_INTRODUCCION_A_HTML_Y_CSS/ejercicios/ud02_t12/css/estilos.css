@@ -1,11 +1,11 @@
 body{
 	background-color: palegreen;	
 }
-body > ol > li {
+ol > li {
 	list-style-type: square;
 }
 
-body > ol > ol > ol > li{
+ol > ol > ol > li{
 	list-style-type: none ;
 }
 
@@ -13,11 +13,11 @@ a[href]{
 	text-decoration: none;
 }
 
-a[href]:hover{
+a:hover{
 	text-decoration: none;
 }
 
-a[href]:active{
+a:active{
 	color: yellow;
 }
 
@@ -25,17 +25,13 @@ body > ol > li > a:hover{
 	background-color: pink;
 }
 
-body > ol > ol > li > a:hover{
-	background-color: gray;
-}
-
 body > ol > ol > ol > li > a:hover{
 	background-color: gray;
 }
 
-a[href]{
+a{
 	display: inline-block;
 }
-a[href]::first-letter{
+a::first-letter{
 	font-size: 2em;
 }
