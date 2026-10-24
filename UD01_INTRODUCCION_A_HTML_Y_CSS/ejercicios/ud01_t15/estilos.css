@@ -1,0 +1,40 @@
+table {
+    width: 50%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td {
+    border: 2px solid black;
+    text-align: center;
+    height: 30px;
+}
+
+tr:nth-child(7n+1) td {
+    background-color: red;
+}
+
+tr:nth-child(7n+2) td {
+    background-color: orange;
+}
+
+tr:nth-child(7n+3) td {
+    background-color: yellow;
+}
+
+tr:nth-child(7n+4) td {
+    background-color: green;
+}
+
+tr:nth-child(7n+5) td {
+    background-color: lightblue;
+}
+
+tr:nth-child(7n+6) td {
+    background-color: darkblue;
+}
+
+tr:nth-child(7n+7) td {
+    background-color: purple;
+}
