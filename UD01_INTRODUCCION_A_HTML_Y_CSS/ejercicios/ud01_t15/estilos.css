@@ -2,13 +2,13 @@ table {
     width: 50%;
     border: 2px solid black;
     border-collapse: collapse;
-    table-layout: fixed;
 }
 
 td {
     border: 2px solid black;
     text-align: center;
     height: 30px;
+    width: 40px;
 }
 
 tr:nth-child(7n+1) td {
@@ -32,9 +32,9 @@ tr:nth-child(7n+5) td {
 }
 
 tr:nth-child(7n+6) td {
-    background-color: darkblue;
+    background-color: blue;
 }
 
-tr:nth-child(7n+7) td {
+tr:nth-child(7n) td {
     background-color: purple;
 }
