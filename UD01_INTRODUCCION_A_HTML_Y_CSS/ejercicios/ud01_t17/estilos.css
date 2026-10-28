@@ -10,3 +10,62 @@
   --borde: #b89a6b;
   --hover: #f0d49a;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  border-right: 1px solid dotted;
+  text-align: center;
+  height: 30px;
+  width: 50px;
+}
+
+thead tr{
+    background-color: var(--ocre-escuro);
+}
+
+td {
+  border-right: 1px solid dotted;
+  text-align: left;
+  height: 30px;
+  width: 50px;
+}
+
+tfoot tr{
+  background-color: var(--ocre-escuro);
+}
+
+tbody th, tbody td, body table thead th{
+  border-right: 1px dotted var(--borde);
+  border-bottom: 1px dotted var(--borde);
+}
+
+#reinado{
+  background-color: var(--ocre);
+}
+
+.th_iguales {
+  background-color: var(--beixe-escuro);
+}
+
+img {
+  width: 40%;
+  border-radius: 100%;
+  border-image: auto;
+  border-style: double;
+}
+
+tr:hover {
+  background-color: var(--hover);
+}
+
+tbody tr:nth-child(2n+1) {
+  background-color: var(--papel);
+}
+
+tbody tr:nth-child(2n+2) {
+  background-color: var(--beixe);
+}
