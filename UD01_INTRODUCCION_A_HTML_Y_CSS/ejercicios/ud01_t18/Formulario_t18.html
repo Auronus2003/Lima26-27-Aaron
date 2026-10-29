@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Aaron" />
@@ -7,32 +8,187 @@
     <meta name="keywords" content="html" />
     <title>Formulario_T18</title>
     <style>
+        h1{
+            color: deepskyblue;
+            text-shadow: 0.25em 0.25em 0.25em darkblue;
+        }
 
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        legend {
+            color: deepskyblue;
+            text-shadow: 0.25em 0.25em 0.25em darkblue;
+        }
+
+        fieldset {
+            border: 1px solid cyan;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+        input {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        textarea {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .phone {
+            width: 180px;
+        }
+
+        .age {
+            width: 110px;
+        }
+
+        input,
+        textarea {
+            background-color: #5797f1;
+            border: none;
+        }
+
+        input:required,
+        textarea:required {
+            background-color: red;
+        }
+
+        input:valid,
+        textarea:valid {
+            background-color: #5797f1;
+            color: #345714;
+        }
+
+        input:invalid,
+        textarea:invalid {
+            background-color: red;
+            color: #3de60a;
+        }
+
+        input:focus,
+        textarea:focus {
+            border: 2px solid #1a56db;
+            color: #0b2a7a;
+        }
+
+        .oculto {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            opacity: 0;
+        }
+
+        .boton_archivo {
+            display: inline-block;
+            padding: 2px 8px;
+            background: #5797f1;
+            border: 1px solid cyan;
+            border-radius: 3px;
+            cursor: pointer;
+        }
     </style>
 </head>
+
 <body>
-    <h1>Inscripción a un taller tecnologico</h1>
-<form action="#" method="get">
-    <fieldset>
-        <legend>1. Datos personales</legend>
-        <p>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required minlength="3" maxlength="40"><br><br>
-            
-            <label for="apellidos">Apellidos</label>
-            <input type="text" name="apellidos" id="apellidos" placeholder="Tus apellidos" required minlength="6" maxlength="60"><br><br>
-
-            <label for="contraseña">Contraseña</label>
-            <input type="text" name="contraseña" id="contraseña" placeholder="Tu contraseña" required minlength="8" maxlength="20" pattern="(?=.*[A-Za-z])(?=.*[0-9]).*"><br>
-
-        </p>
-    </fieldset>
+    <h1>Inscripción a un taller tecnológico</h1>
+    <form action="#" method="get">
         <fieldset>
-        <legend></legend>
-    </fieldset>
+            <legend>1. Datos personales</legend>
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required minlength="3"
+                    maxlength="40"><br><br>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Tus apellidos" required minlength="6"
+                    maxlength="60"><br><br>
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="text" name="contraseña" id="contraseña" placeholder="Tu contraseña" required minlength="8"
+                    maxlength="20" pattern="(?=.*[A-Za-z])(?=.*[0-9]).*"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Tu email" required><br><br>
+
+                <label class="phone" for="telefono">Teléfono:</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Tu teléfono" pattern="[0-9]{9}"><br><br>
+
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" name="fecha" id="fecha" required minlength="1950-01-01"
+                    maxlength="2010-12-31"><br><br>
+
+                <label class="age" for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" placeholder="Tu edad" required min="14" max="100"><br><br>
+
+                <label for="search">Buscar un taller:</label>
+                <input type="search" name="search" id="search" placeholder="Buscar un taller"><br><br>
+            </p>
+        </fieldset>
         <fieldset>
-        <legend></legend>
-    </fieldset>
-</form>
+            <legend>2. Inscripción</legend>
+            <p>
+                <label for="Fecha Inscripcion">Fecha de inscripción:</label>
+                <input type="datetime-local" name="Fecha Inscripcion" id="Fecha Inscripcion" required
+                    min="2026-01-01T00:00" max="2027-12-31T23:59"><br><br>
+
+                <label for="Mes preferido">Mes preferido:</label>
+                <input type="month" name="Mes preferido" id="Mes preferido" min="2027-01" max="2027-12"><br><br>
+
+                <label for="Semana preferida">Semana preferida:</label>
+                <input type="week" name="Semana preferida" id="Semana preferida" min="2027-W01" max="2027-W52"><br><br>
+
+                <label for="hora preferida">Hora preferida:</label>
+                <input type="time" name="hora preferida" id="hora preferida" required min="09:00" max="20:00"><br><br>
+
+                <label for="radio">Modalidad:</label><br>
+                <input type="radio" name="radio" id="radio" value="presencial" required>
+                <label for="radio">Presencial</label>
+                <input type="radio" name="radio" id="radio" value="online" required>
+                <label for="radio">Online</label><br><br>
+
+                <label for="checkbox">Talleres de interés:</label><br>
+                <input type="checkbox" name="checkbox" id="checkbox" value="taller1">
+                <label for="checkbox">Programación</label>
+                <input type="checkbox" name="checkbox" id="checkbox" value="taller2">
+                <label for="checkbox">Redes</label>
+                <input type="checkbox" name="checkbox" id="checkbox" value="taller3">
+                <label for="checkbox">Diseño Web</label><br><br>
+
+                <label for="range">Numero de sesiones</label>
+                <input type="range" name="range" id="range" min="1" max="10"><br><br>
+
+                <label for="documento">Documento identificativo:</label>
+                <input type="file" name="documento" id="documento" accept=".pdf"><br><br>
+
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>3. Información adicional</legend>
+            <p>
+                <label for="Web">Página Web:</label>
+                <input type="url" name="Web" id="Web" placeholder="https://www.url.com"><br><br>
+
+                <label for="Código">Código de invitación</label>
+                <input type="text" name="Código" id="Código" placeholder="Ej. AB12" pattern="[A-Za-z0-9]{4,8}"
+                    title="Entre 4 y 8 caracteres alfanuméricos"><br><br>
+
+                <label for="Color">Color preferido</label>
+                <input type="color"><br><br>
+
+                <label for="textarea">Comentarios</label>
+                <textarea name="textarea" id="textarea" placeholder="Escribe tus comentarios" rows="4" cols="50"
+                    maxlength="300"></textarea><br><br>
+
+            </p>
+        </fieldset>
+        <br>
+        <input class="oculto" type="hidden" name="campana">
+        <input class="button" type="button" value="Consultar disponibilidad">
+        <input type="submit" value="Enviar inscripcion">
+        <input type="reset" value="Restablecer">
+    </form>
 </body>
+
 </html>
