@@ -84,7 +84,7 @@ img {
   border: 3px solid var(--borde);
 }
 
-tbody tr:hover {
+tbody tr:hover td{
   background-color: var(--hover);
 }
 
