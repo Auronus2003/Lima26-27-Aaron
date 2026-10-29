@@ -12,12 +12,22 @@
 }
 
 caption {
-  text-shadow: ;
+  text-shadow: 0.25em 0.25em 0.5em var(--tinta);
+  color: var(--tinta);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+body {
+  background-color: var(--beixe);
 }
 
 table {
   width: 100%;
-  border-collapse: collapse;
+}
+
+tbody {
+  padding: 0.5em;
 }
 
 th {
@@ -29,14 +39,18 @@ th {
 
 thead tr{
     background-color: var(--ocre-escuro);
-    color: white;
+    color: var(--marfil);
 }
 
 td {
   border-right: 1px solid dotted;
-  text-align: left;
+  text-align: center;
   height: 30px;
   width: 50px;
+}
+
+tfoot td{
+  background-color: var(--ocre-escuro);
 }
 
 tfoot tr{
@@ -50,27 +64,34 @@ tbody th, tbody td, body table thead th{
 
 #reinado{
   background-color: var(--ocre);
+  color: var(--marfil);
+  
 }
 
 .th_iguales {
   background-color: var(--beixe-escuro);
 }
 
+.foto_monarca {
+  text-align: center;
+}
+
 img {
-  width: 40%;
+  height: 80px;
   border-radius: 100%;
-  border-image: auto;
-  border-style: double;
+  padding: 3px;
+  background-color: var(--marfil);
+  border: 3px solid var(--borde);
 }
 
 tbody tr:hover {
   background-color: var(--hover);
 }
 
-tbody tr:nth-child(2n+1) {
+tbody tr:nth-child(odd) {
   background-color: var(--papel);
 }
 
-tbody tr:nth-child(2n+2) {
+tbody tr:nth-child(even) {
   background-color: var(--beixe);
 }
