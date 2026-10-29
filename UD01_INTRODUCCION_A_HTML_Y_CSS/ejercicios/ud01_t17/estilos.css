@@ -20,6 +20,8 @@ caption {
 
 body {
   background-color: var(--beixe);
+  padding-left: 250px;
+  padding-right: 250px;
 }
 
 table {
@@ -58,8 +60,8 @@ tfoot tr{
 }
 
 tbody th, tbody td, body table thead th{
-  border-right: 1px dotted var(--borde);
-  border-bottom: 1px dotted var(--borde);
+  border-right: 2px dotted var(--borde);
+  border-bottom: 2px dotted var(--borde);
 }
 
 #reinado{
@@ -86,6 +88,7 @@ img {
 
 tbody tr:hover td{
   background-color: var(--hover);
+  border-bottom: 2px dotted var(--tinta-suave);
 }
 
 tbody tr:nth-child(odd) {
