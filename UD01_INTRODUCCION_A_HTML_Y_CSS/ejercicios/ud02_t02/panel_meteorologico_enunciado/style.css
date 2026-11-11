@@ -14,103 +14,134 @@ body {
 }
 
 article {
-    width: 200px;
-    height: 150px;
-    padding: 150px;
-    margin-right: 700px;
-    margin-left: 700px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    border-radius: 40px 40px 40px 40px;
+    width: 425px;
+    height: 500px;
+    opacity: 0.75;
+    padding: 15px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-radius: 10px 10px 10px 10px;
     background-color: var(--violeta-claro);
     position: absolute;
 }
 
 header {
     text-align: right;
-
+    border-bottom: var(--borde);
+    padding-bottom: 8px;
 }
 
 h1 {
-    text-align: right;
+    font-size: 0.6em;
+    margin: 0;
 }
 
 .fecha {
-    text-align: right;
+    font-size: 0.6em;
+    color: var(--gris);
 }
 
 .tiempo-actual {
-    size: 100%;
+    margin-top: 20px;
+    overflow: hidden;
 }
 
 .temperatura {
-
+    float: left;
+    width: 50%;
+    margin-left: 15px;
 }
 
 .valor {
-    width: 500px;
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1;
+    margin-left: -10px;
 }
 
 .estado {
-
+    margin: 15px 0 5px 0;
+    font-size: 0.6em;
 }
 
 .imagen-tiempo {
-    width: 200px;
+    width: 150px;
+    float: right;
+    margin-top: 5px;
 }
 
 .imagen-tiempo img {
-    text-align: right;
+    width: 100%;
 }
 
 .detalles {
-
+    margin: 5px 0;
+    font-size: 0.53em;
 }
 
 .detalles p {
-
+    font-style: normal;
 }
 
 .detalles strong {
-
+    font-style: normal;
 }
 
 .prevision {
-
+    margin-top: 20px;
 }
 
 .prevision h2 {
-
+    font-size: 0.7em;
+    font-weight: bold;
+    border-bottom: var(--borde);
+    padding-bottom: 5px;
+    margin: 0 0 12px 0;
 }
 
 .capsula{
-
+    background-color: var(--violeta-oscuro);
+    color: var(--blanco);
+    font-size: 0.5em;
+    padding: 4px 5px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 table {
-
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
 }
 
 th {
-
+    width: 15%;
+    padding-bottom: 10px;
 }
 
 td{
-
+    padding: 2px 0;
 }
 
 td:not(:last-child), th:not(:last-child) {
-    
+    border-right: var(--borde)
 }
 
 .iconos img {
-
+    width: 25px;
 }
 
 .maximas {
-
+    font-size: 0.7em;
+    font-weight: bold;
 }
 
 .minimas {
-
+    font-size: 0.7em;
+    color: var(--gris);
 }
