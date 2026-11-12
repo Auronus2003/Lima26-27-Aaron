@@ -25,7 +25,7 @@ article {
     right: 0;
     box-sizing: border-box;
     border-radius: 10px 10px 10px 10px;
-    background-color: var(--violeta-claro);
+    background-color: white;
     position: absolute;
 }
 
