@@ -1,0 +1,101 @@
+:root {
+    --color-fondo: #e5dcc5;
+    --color-texto: white;
+    --color-superior: #d25a44;
+    --color-derecha: rgba(30, 120, 200, 0.4);
+    --color-inferior: #f0a040;
+    --color-izquierda: rgba(90, 61, 138, 0.7);
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-fondo);
+}
+
+.fondo {
+    height: 50vh;
+    padding-top: 10vh;
+    box-sizing: border-box;
+}
+
+.circulo1,
+.circulo2,
+.circulo3,
+.circulo4 {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 10px gray;
+    box-sizing: border-box;
+}
+
+.circulo1 {
+    background-image: url("https://picsum.photos/id/1018/600/600");
+}
+
+.circulo2 {
+    background-image: url("https://picsum.photos/id/1015/600/600");
+    background-size: 25%;
+    background-repeat: repeat;
+}
+
+.circulo3 {
+    background-image: url("https://picsum.photos/id/1016/600/600");
+    padding-top: 20vh;
+}
+
+.circulo4 {
+    background-image: url("https://picsum.photos/id/1019/600/600");
+}
+
+.ocupado {
+    color: var(--color-texto);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.circulo1 .ocupado {
+    width: 100%;
+    height: 50%;
+    padding-top: 10vh;
+    background-color: var(--color-superior);
+    border-top-left-radius: 20vh;
+    border-top-right-radius: 20vh;
+}
+
+.circulo2 .ocupado {
+    width: 50%;
+    height: 100%;
+    margin-left: 50%;
+    padding-top: 20vh;
+    background-color: var(--color-derecha);
+    border-bottom-right-radius: 20vh;
+    border-top-right-radius: 20vh;
+}
+
+.circulo3 .ocupado {
+    width: 100%;
+    height: 100%;
+    padding-top: 10vh;
+    background-color: var(--color-inferior);
+    background-image: linear-gradient(100deg,
+            var(--color-inferior),
+            var(--color-superior));
+    border-bottom-left-radius: 20vh;
+    border-bottom-right-radius: 20vh;
+}
+
+.circulo4 .ocupado {
+    width: 50%;
+    height: 100%;
+    padding-top: 20vh;
+    background-color: var(--color-izquierda);
+    border-top-left-radius: 20vh;
+    border-bottom-left-radius: 20vh;
+
+}
